@@ -1,0 +1,361 @@
+/******************************************
+/* SETUP
+/*******************************************/
+html,body{
+  margin: 0;
+  padding: 0;
+}
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 15px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+li{
+  list-style: none;
+}
+form{
+  width: 100%
+}
+h5{
+  font-size: 20px;
+}
+button{
+  font-size: 16px;
+  padding: 7px 24px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+}
+header{
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-image: url(http://www.actualflight.com/wp-content/uploads/2017/06/w.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+footer{
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  text-align: center;
+  background-color: lightgrey;
+}
+input{
+  width: 50%;
+  height: 40px;
+  float: left;
+}
+footer section{
+  background-color: white;
+  width: 120px;
+}
+footer p{
+  color: black;
+}
+footer h4{
+  color: red;
+}
+footer li{
+  float: left;
+  margin-left: 165px;
+}
+footer img{
+  width: 60px;
+  height: 50px;
+}
+.topLeft{
+  float: left;
+  width:30%;
+}
+#menu{
+  display:none;
+}
+.second{
+  border-left: 1px solid black;
+  float: left;
+}
+.topRight{
+  float: right;
+  margin-right: 100px;
+  margin-top: 20px;
+  width: 25%;
+}
+.search{
+  background-color: red;
+  float: left;
+  width: 5%;
+  height: 40px;
+  margin: auto;
+}
+.mid{
+  margin: auto;
+  clear: both;
+  width: 60%;
+}
+.indent{/* ***************************************broken list */
+  margin-left: 230px;
+}
+.bottom{
+  clear: both;
+  margin-top: 10%;
+}
+.icon{/* ***************************************broken list */
+  margin-left: 35px;
+}
+.mainContainer{
+  width: 100%;
+  height: 700px;
+
+  text-align: center;
+}
+.city{
+
+}
+.business{
+
+  text-align: center;
+  margin-top: 40px;
+}
+.restImg{
+
+  width: 100%;
+}
+.hot{
+  margin:10px;
+}
+.mid2{
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+.aloneSpan{
+  width: 100%;
+ clear: both;
+ padding: 10px;
+}
+.restDesc{
+
+  height: 50%;
+  width: 100%;
+  text-align: left;
+}
+/* .mid3{
+  margin-top: 39px;
+} */
+.fas-fa-search{
+  float: left;
+}
+.forms{
+  float: left;
+  width: 95%;
+}
+.box{
+  width: 20%;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+
+  float: left;
+  margin-left: 140px;
+}
+.mid3 ul{
+  margin: auto;
+  margin-left: 20%;
+}
+.city li{/* ***************************************broken list */
+  float: left;
+  /* margin-left: 5%; */
+}
+.search i{
+  font-size: 20px;
+  padding-top: 10px;
+}
+.mainContainer h5{
+  margin-bottom: 0px;
+}
+.topLeft li{
+  float: left;
+  margin-left: 50px;
+}
+.restDesc p{
+  margin: 0;
+  padding-left: 3%;
+}
+.box img{
+  width: 100%;
+  height: 100%;
+}
+.mid3 li{
+  float: left;
+}
+.topRight span{
+  padding-right: 30px;
+}
+.mainContainer h5{
+  color: red;
+}
+.hot span{
+  color:red;
+}
+.city{
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+.city ul{
+  /* text-align: center; */
+}
+.bold{
+  color: blue;
+  font-weight: bold;
+}
+.fire{
+  color: orange;
+}
+.city ul li{
+  margin-right: 2%;
+}
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px){
+  section{
+    width: 100%;
+  }
+  footer{
+    display: none;
+  }
+  .business{
+    width:80%;
+  }
+  /* .topLeft{
+    display: none;
+  } */
+  .bottom{
+    display: none;
+  }
+  .box{
+    width: 100%;
+    margin-left: 0;
+  }
+  .topRight{
+    margin:auto;
+    width: 47%;
+  }
+  .search{
+    display: none;
+  }
+  .mid3 ul li{
+    width: 100%;
+    margin: auto;
+  }
+  .mid3 ul {
+    margin: auto;
+    margin-left: -15%;
+  }
+  .hot span{
+    display: none;
+  }
+  .city ul{
+    padding-right: 15%;
+  }
+  .city ul li{
+    width: 100%;
+    /* margin-right: 55%; */
+  }
+  #menu{
+    display:block;
+  }
+}
+  @media  (max-width: 1180px){
+    section{
+    width: 100%;
+    }
+    footer li{
+      margin-left: 5%;
+    }
+    .topLeft{
+      width: 47%;
+      float: left;
+    }
+    .bottom{
+      display: none;
+    }
+    .box{
+      margin-left: 10%;
+    }
+    .mid3 {
+    padding-right: 25%;
+    }
+    .city ul{
+      margin-right: 0;
+    }
+    .mid3 ul li{
+      width: 100%;
+      margin: auto;
+    }
+    .city ul li {
+    margin-left: 4%;
+    }
+    .topRight span, .topRight button{
+      display: none;
+    }
+    .topLeft nav ul li{
+      display: none;
+    }
+    #menu{
+      display:block;
+    }
+    .city ul li{
+      display: none;
+    }
+    footer{
+      display: none;
+    }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
