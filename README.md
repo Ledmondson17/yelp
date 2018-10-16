@@ -1,4 +1,4 @@
-# Slate Yelp
+# Yelp
 Copy of a Yelp webpage
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
